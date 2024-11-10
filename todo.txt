@@ -1,0 +1,24 @@
+HTML/CSS
+1. Web aplikacijai, kuri išsaugotų 
+Sukurkime WEB aplikaciją kuri būtų skirta išsisaugoti pirkinių sąrašą (tokį kokį susidarome prieš išeidami į parduotuvę).
+Įvedimo formoje turėtų būti įvedimo laukai: prekė, kiekis ir mygtukas pridėti. 
+Kiekviena prekė turėtų būti pridedama į masyvą, o masyvas atvaizduojamas puslapyje.  
+  
+Patobulinkime aplikaciją taip, kad prekių sąrašas būtų išsaugomas į localstorage, 
+o užsikraunant aplikacijai išsaugotas (jei toks egzistuoja) sąrašas būtų užkraunamas iš localstorage.  
+  
+Aplikacijoje padarykite mygtuką visų prekių ištrynimui, 
+taip pat padarykite prie kiekvienos prekės mygtuką "ištrinti" kurį paspaudus būtų panaikinama tik ta prekė.
+
+CRUD
+Pamėginkite sukurti CRUD aplikaciją (pradžioje įrašų pridėjimą ir atvaizdavimą) 
+jūsų pasirintai užduočiai (tai gali būti turimų knygų sąrašui (pavadinimas, autorius, metai),
+ turimiem garso įrašam, kompaktams, plokštelėms ar kt. (albumo pavadinimas, dainininkas, metai...))
+
+3. Errorai ir loadingai 
+
+4. Auth
+
+5. Interceptors??
+
+
