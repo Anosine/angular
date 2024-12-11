@@ -2,8 +2,22 @@
 
 <div> 
     <label for="name">Prekė</label>
-    <input type="text" id="name" [(ngModel)]="item.name" placeholder="Prekė" >
+    <input type="text" id="name"  placeholder="Prekė" >
     <label for="quantity">Kiekis</label>
-    <input type="number" id="quantity" [(ngModel)]="item.quantity" placeholder="Kiekis" >
+    <input type="number" id="quantity"  placeholder="1" style="width: 30px;" >
+    
+    
 
 </div>
+
+
+<!--
+[(ngModel)]="item.name"
+<input type="number" id="quantity" [(ngModel)]="item.quantity" placeholder="Kiekis" >
+<button (click)="addItem()">Pridėti</button>
+
+[(ngModel)]="item.quantity"
+<button (click)="addItem()">Pridėti</button>
+
+
+-->

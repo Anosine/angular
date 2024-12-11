@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './show-items.component.css'
 })
 export class ShowItemsComponent {
-
-}
+  items = [];
+  
+  }
