@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container for the game form and table */
+  div {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input fields and button */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  /* Action buttons */
+  button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  button:nth-child(1) {
+    background-color: #007bff;
+  }
+  
+  button:nth-child(2) {
+    background-color: #28a745;
+  }
+  
+  button:nth-child(3) {
+    background-color: #dc3545;
+  }
+  
+  /* Edit Mode */
+  input[type="text"]:focus {
+    border-color: #4CAF50;
+  }
+  
+  input[type="text"]:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 12px;
+    }
+  
+    input[type="text"] {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  

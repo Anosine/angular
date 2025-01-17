@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExtraComponent } from './extra.component';
+import { ApiComponent } from './api.component';
 
-describe('ExtraComponent', () => {
-  let component: ExtraComponent;
-  let fixture: ComponentFixture<ExtraComponent>;
+describe('APIComponent', () => {
+  let component: ApiComponent;
+  let fixture: ComponentFixture<ApiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExtraComponent]
+      imports: [ApiComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExtraComponent);
+    fixture = TestBed.createComponent(ApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

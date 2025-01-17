@@ -1,1 +1,34 @@
-<p>show-items works!</p>
+<h2>Apliakcija:</h2>
+
+<div> 
+    <label for="name">Prekė: </label>
+    <input type="text" id="name"  placeholder="Prekė" #itemName>
+    <label for="quantity">Kiekis : </label>
+    <input type="number" id="quantity" placeholder="1" value="1" style="width: 40px;" #itemQuantity>
+   
+
+    <button type="button" class="add-button" (click)="addItem(itemName.value, +itemQuantity.value); itemName.value=''; itemQuantity.value='1'">
+        Pridėti prekę
+    </button>
+</div>   
+    <ul class="items">
+            <table>
+                <thead>
+                    <button (click)="deleteAll()">              Ištrinti viską</button>
+                    <tr>
+                        <th>Prekė</th>
+                        <th>Kiekis</th>
+                        <th>Pašalinti?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items">
+                        <td>{{item.name}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>
+                            <button (click)="delete(item)">Ištrinti</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+

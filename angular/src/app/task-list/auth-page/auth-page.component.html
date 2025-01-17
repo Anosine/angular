@@ -1,0 +1,25 @@
+
+    <div class="button-group">
+    <table>
+    <tr>
+      <td>
+        <button *ngIf="!loggedIn"type="button" class="signIn" (click)="signinWithGoogle()">Prisijungti su Google</button>
+      </td>
+      <td>
+        <p *ngIf="!loggedIn">ESATE ATSIJUNGES - Norint naudotis sistemą būtina prisijungti su Google paskyra.</p> 
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button *ngIf="loggedIn" type="button" class="signOut" (click)="signOut()">Atsijungti</button>
+      </td>
+      <td>
+        <p *ngIf="loggedIn">ESATE PRISIJUNGES</p>
+      </td>
+    </tr>
+    
+    </table>
+    
+  
+  </div>

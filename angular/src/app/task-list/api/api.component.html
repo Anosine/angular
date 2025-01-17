@@ -1,0 +1,51 @@
+<div *ngIf="loggedIn">
+
+
+  <input #gameName type="text" placeholder="Žaidimo pavadinimas">
+  <input #gameComments type="text" placeholder="Komentarai">
+  <input #gamePlayedYear type="text" placeholder="Kada žaidei">
+  <input #gameRating type="text" placeholder="Įvertinimas">
+  <button (click)="createGames(gameName.value, gameComments.value, gamePlayedYear.value, gameRating.value)">Pridėti žaidimą</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Pavadinimas</th>
+        <th>Komentarai</th>
+        <th>Kada žaista</th>
+        <th>Įvertinimas</th>
+        <th>Veiksmai</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let game of games; let i = index">
+        <td *ngIf="game.editing">
+          {{ game.name }}
+        </td>
+        <td *ngIf="game.editing">
+          <input [(ngModel)]="game.comments" type="text">
+        </td>
+        <td *ngIf="game.editing">
+          <input [(ngModel)]="game.playedYear" type="text">
+        </td>
+        <td *ngIf="game.editing">
+          <input [(ngModel)]="game.rating" type="text">
+        </td>
+
+        <td *ngIf="!game.editing">{{ game.name }}</td>
+        <td *ngIf="!game.editing">{{ game.comments }}</td>
+        <td *ngIf="!game.editing">{{ game.playedYear }}</td>
+        <td *ngIf="!game.editing">{{ game.rating }}</td>
+
+        <td>
+
+          <button *ngIf="!game.editing" (click)="editGame(game)">Redaguoti</button>
+      
+          <button *ngIf="game.editing" (click)="updateGames(game)">Išsaugoti</button>
+
+          <button (click)="deleteGames(game.name)">Ištrinti</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
