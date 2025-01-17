@@ -71,7 +71,7 @@ export class ApiComponent {
     }
 
     updateGames(game: Game) {
-      this.checkValidity(game.name, game.comments, game.playedYear, game.rating);
+      //this.checkValidity(game.name, game.comments, game.playedYear, game.rating);
       game.editing = false;
       console.log(game.name);
       setDoc(doc(this.firestore, 'gamesList', game.name), {
